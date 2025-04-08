@@ -1,0 +1,186 @@
+
+
+.back {
+  background-color: #f7f0f5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.profile-container {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f6f1ec; /* Updated color */
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #f6f1ec; /* Updated color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Main content styling */
+.main-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avatar-section {
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.greeting {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.greeting p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.greeting .username {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #666;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.update-button {
+  padding: 10px;
+  background-color: #d1b5b5;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover and focus states */
+button:hover,
+.update-button:hover {
+  opacity: 0.9;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1a365d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    margin: 20px;
+  }
+}
+
+.avatar-section {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative; /* To allow absolute positioning for the label */
+}
+
+.profile-label {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #d1b5b5; /* Matching button color */
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  position: absolute;
+  top: -30px; /* Adjust the label's position above the image */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin: -450px auto 50px; /* Adjust margin to move image up */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

@@ -1,0 +1,35 @@
+/* Make the background image cover the entire page */
+.background-container {
+  background-image: url("C:/Users/dell/Desktop/home.jpg"); /* Ensure the path is correct */
+  background-size: cover; /* Make sure the image covers the whole container */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: flex-end; /* Move content to the right side */
+  padding-right: 100px; /* Adjust padding as needed to position text */
+}
+
+/* Styling for the main content */
+.content {
+  color: black;
+  
+  padding: 30px;
+  /* border-radius: 10px; */
+  max-width: 500px; /* Limit the width of the content */
+  text-align: left; /* Align text to the left */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+} 
+
+.font {
+  font-size: 20px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* h4 styling */
+h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}

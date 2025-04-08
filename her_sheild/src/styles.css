@@ -1,0 +1,335 @@
+/* ==========================================================================
+   1. CSS Reset & Base Styles
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f0f5;
+  color: #333;
+}
+
+/* ==========================================================================
+   2. Typography
+   ========================================================================== */
+h1, h2, h3, p {
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  color: #ff4081;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   3. Navigation
+   ========================================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f7f3f0;
+  border-bottom: 2px solid #d1b5b5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #ff4081;
+}
+
+/* Dropdown Menu */
+.programs {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f7f0f5;
+  border: 1px solid #d1b5b5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px 0;
+  list-style: none;
+  z-index: 200;
+}
+
+.programs:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #ff4081;
+}
+
+/* ==========================================================================
+   4. Main Content Layout
+   ========================================================================== */
+.main-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f6f1ec;
+  max-width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  max-width: 50%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.image-container {
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.left-image {
+  max-width: 30%;
+}
+
+/* ==========================================================================
+   5. Images
+   ========================================================================== */
+.side-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.2);
+}
+
+/* ==========================================================================
+   6. Grid Layout
+   ========================================================================== */
+.styled-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   7. Buttons & Interactive Elements
+   ========================================================================== */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-in {
+  background-color: #e8a9a9;
+  color: white;
+}
+
+.login {
+  background-color: #f5d7d7;
+  color: #333;
+}
+
+.login-btn, .signup-btn {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: #ff94a8;
+}
+
+/* ==========================================================================
+   8. Footer
+   ========================================================================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d1b5b5;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* ==========================================================================
+   9. Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+  .styled-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .text-container {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .image-container.left-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .side-image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* src/components/Navbar.css */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5a5f;
+  padding: 10px 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 15px;
+} */
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #ff4b5c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

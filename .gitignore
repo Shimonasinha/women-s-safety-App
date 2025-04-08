@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+.env
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# ZIPs
+*.zip
+"backend.zip" 

@@ -1,0 +1,87 @@
+/* Background Image */
+.all{
+    background-color:white;
+    width:100vw;
+    height:100vh;
+}
+.backgroundall-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 80px;
+  }
+  
+  /* Parent Container for Form and Image */
+  .form-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px; /* Increased the container width for more spacing */
+    margin: 0 auto;
+    padding: 60px; /* Increased padding for overall spacing */
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White with some transparency */
+    padding: 80px 50px; /* Increased padding for a larger form */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+    max-width: 500px; /* Increased the max-width */
+    width: 100%;
+    text-align: center;
+    margin-right: 150px; /* Further moved the form away from the image */
+  }
+  
+  /* Image Container */
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Ensures image is aligned to the left */
+    margin-left: 80px; /* Added margin to further distance the image */
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 600px; /* Adjusted image size */
+    height: 100px;
+    border-radius: 8px;
+     /* Adjust the value as needed */
+  }
+  
+  
+  
+  /* Input Styles */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button Styles */
+  .add-contact-button {
+    background-color: #FFD1DC;
+    color:black;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-contact-button:hover {
+    background-color:#d1b5b5;
+  }
+  

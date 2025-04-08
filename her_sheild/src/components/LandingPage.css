@@ -1,0 +1,29 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pastel pink;
+  }
+
+  .bg{
+    background-color: pink;
+  }
+  
+  /* Full Page GIF */
+  .full-page-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the GIF covers the entire viewport */
+  }
+  

@@ -1,0 +1,99 @@
+/* src/components/ContactUs.css */
+.contact-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 50px 50px;
+  background-color:  #d1b5b5;
+  align-items:center;
+  text-align: center;
+}
+
+.contact-image img {
+  width: 70%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 200px;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.instagram {
+  color: #e4405f;
+}
+
+.address {
+  color: #007bff;
+}
+
+.phone {
+  color: #28a745;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact-card a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
